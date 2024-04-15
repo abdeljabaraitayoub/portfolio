@@ -23,3 +23,8 @@ Route::post('login', 'App\Http\Controllers\AuthController@login');
 Route::post('logout', 'App\Http\Controllers\AuthController@logout');
 Route::post('refresh', 'App\Http\Controllers\AuthController@refresh');
 Route::get('me', 'App\Http\Controllers\AuthController@me');
+
+
+Route::apiResource('users', 'App\Http\Controllers\UserController');
+Route::apiResource('projects', 'App\Http\Controllers\ProjectController');
+Route::apiResource('formations', 'App\Http\Controllers\FormationController');
