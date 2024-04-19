@@ -94,7 +94,7 @@ return [
         ],
         'mongodb' => [
             'driver' => 'mongodb',
-            'dsn' => env('DB_URI', 'mongodb://localhost:27017'),
+            'dsn' => env('DB_URI', 'mongodb+srv://abdeljabarayoubi:GGaVColvMS0gAsLs@cluster0.knd9dez.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'),
             'database' => 'portfolio',
         ],
 
