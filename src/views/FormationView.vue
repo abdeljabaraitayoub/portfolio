@@ -1,5 +1,5 @@
 <template>
-  <p class="text-center mb-3 dark:text-blue-300">Projects</p>
+  <p class="text-center mb-3 dark:text-blue-300">formations</p>
   <div class="max-h-[50vh] overflow-auto sm:w-4/12 mx-auto">
     <Loader v-if="loading" />
     <div v-if="error" class="text-red-500 text-center">{{ error }}</div>
@@ -32,7 +32,7 @@ export default {
     fetchProjects() {
       this.loading = true;
       api
-        .get("projects")
+        .get("formations")
         .then((res) => {
           this.projects = res.data;
           this.loading = false;
